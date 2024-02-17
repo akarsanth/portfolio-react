@@ -5,7 +5,9 @@ import Navigation from "../Navigation/Navigation";
 const Card = () => {
   return (
     <div className="card">
-      <Outlet />
+      <div className="card__content">
+        <Outlet />
+      </div>
       <Navigation />
     </div>
   );

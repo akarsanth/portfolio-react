@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Card from "./Components/Card/Card";
 import About from "./Components/About/About";
 import Skills from "./Components/Skills/Skills";
+import Contact from "./Components/Contact/Contact";
+import Education from "./Components/Education/Education";
 
 const router = createBrowserRouter([
   {
@@ -9,7 +11,7 @@ const router = createBrowserRouter([
     element: <Card />,
     children: [
       {
-        path: "/about",
+        path: "/",
         element: <About />,
       },
 
@@ -24,8 +26,13 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/about",
-        element: <About />,
+        path: "/education",
+        element: <Education />, // Add college and Internship
+      },
+
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

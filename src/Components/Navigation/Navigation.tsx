@@ -1,7 +1,7 @@
 import "./Navigation.scss";
 
 const Navigation = () => {
-  return <div></div>;
+  return <nav className="nav"></nav>;
 };
 
 export default Navigation;
