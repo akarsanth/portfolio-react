@@ -1,9 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import Card from "./Components/Card/Card";
-import About from "./Components/About/About";
-import Skills from "./Components/Skills/Skills";
-import Contact from "./Components/Contact/Contact";
+import Me from "./Components/Me/Me";
 import Education from "./Components/Education/Education";
+import Contact from "./Components/Contact/Contact";
+import About from "./Components/About/About";
+import Project from "./Components/Project/Project";
 
 const router = createBrowserRouter([
   {
@@ -12,22 +13,22 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <About />,
+        element: <Me />,
       },
 
       {
         path: "/projects",
-        element: <About />,
-      },
-
-      {
-        path: "/skills",
-        element: <Skills />,
+        element: <Project />,
       },
 
       {
         path: "/education",
-        element: <Education />, // Add college and Internship
+        element: <Education />,
+      },
+
+      {
+        path: "/about",
+        element: <About />,
       },
 
       {

@@ -1,0 +1,158 @@
+.tab__about {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: scroll;
+}
+
+.about-left {
+  padding: 3rem;
+  width: 65%;
+}
+
+.about-heading {
+  font-family: "Epilogue", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.about-text {
+  font-size: 1.5rem;
+  width: 90%;
+  font-weight: 200;
+  letter-spacing: 0.75px;
+  line-height: 2;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40rem;
+  width: 25rem;
+  opacity: 0.9;
+  border-bottom-left-radius: 1rem;
+  object-fit: cover;
+  object-position: 10% 30%;
+}
+
+.separator {
+  margin-top: 1rem;
+  border: 0;
+  height: 0.2rem;
+  background: #d9aa48;
+}
+
+/* Resume Link */
+.tab__about a:link,
+.tab__about a:visited {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 0.7rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #5e6a83;
+  transition: color 1s ease-out;
+  width: fit-content;
+}
+
+.tab__about a:hover {
+  color: #3e31fa;
+}
+
+.tab__about a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -0.8rem;
+  background-color: #3e31fa;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.4s ease-out;
+}
+
+.tab__about a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Width 750px and less */
+@media screen and (max-width: 46.8rem) {
+  .about-left {
+    width: 60%;
+  }
+
+  .about-text {
+    font-size: 1.3rem;
+    width: 95%;
+  }
+}
+
+/* Width 600px and less */
+@media screen and (max-width: 40.6rem) {
+  .about-left {
+    width: 55%;
+  }
+
+  .about-text {
+    font-size: 1.3rem;
+    width: 95%;
+  }
+}
+
+/* Width 550px and less */
+@media screen and (max-width: 34.3rem) {
+  .tab__about {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .about-left {
+    width: 100%;
+  }
+  .about-image {
+    position: relative;
+    order: -1;
+  }
+}
+
+/* Height 800px and less */
+@media screen and (max-height: 50rem) {
+  .about-image {
+    height: 30rem;
+    width: 25rem;
+  }
+}
+
+/* Height 700px and less */
+@media screen and (max-height: 43.7rem) {
+  .about-image {
+    height: 30rem;
+    width: 25rem;
+  }
+
+  .tab__about {
+    gap: 1rem;
+  }
+}
+
+/* Width 300px and less */
+@media screen and (max-width: 18.75rem) {
+  .about-image {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .about-text {
+    font-size: 1.3rem;
+  }
+}

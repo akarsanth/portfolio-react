@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*
 --- 01 TYPOGRAPHY SYSTEM
@@ -29,7 +31,9 @@ Large: 1.8
 - Tints:
 More #fdfdff #fafcff #f8faff #f6f8ff #f3f7ff #f1f5ff #f1f5ff
 
-
+#f2f0ff
+#f0eeff
+#eeecff
 #eceaff
 #d8d6fe
 #c5c1fe
@@ -73,7 +77,6 @@ Medium: 11px
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
-
 * {
   padding: 0;
   margin: 0;
@@ -86,52 +89,82 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   line-height: 1;
   font-weight: 400;
-  min-height: 100vh;
-  color: #555;
-  background: linear-gradient(8deg, #d1dcff 19.1%, #f1f5ff 94.27%);
+  color: #0f2145;
+}
 
+#root {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(8deg, #d1dcff 19.1%, #f1f5ff 94.27%);
 }
 
 footer {
   position: absolute;
-  bottom: 6rem;
+  bottom: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 footer img {
-  height: 5rem;
-  margin-bottom: 1.5rem;
+  height: 3.5rem;
+  margin-bottom: 1.2rem;
 }
 
 footer p {
   color: #5e6a83;
-  font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: 0.12rem;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
 }
 
 footer svg {
   display: inline-block;
   vertical-align: text-bottom;
-  color: #5e6a83;
+  color: #9ea6b5;
   margin: 0 0.3em;
   margin-bottom: -0.03rem;
 }
 
 footer svg:hover {
-  color: #0f2145;
+  color: #5e6a83;
 }
 
-@media (max-width: 750px), (max-height: 780px) {
+/* 750px */
+@media only screen and (max-width: 46.8rem) {
+  footer {
+    display: none;
+  }
+}
+
+/* 780px */
+@media only screen and (max-height: 48.75rem) {
+  footer {
+    bottom: 2rem;
+  }
+}
+
+/* Height 700px and less */
+@media only screen and (max-height: 43.75rem) {
+  footer {
+    bottom: 2.5rem;
+  }
+
+  footer img {
+    display: none;
+  }
+}
+
+/* Height 650px and less */
+@media only screen and (max-height: 40.6rem) {
   footer {
     display: none;
   }
