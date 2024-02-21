@@ -4,11 +4,12 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa6";
 import "./Contact.css";
+import AnimatedSection from "../AnimatedSection";
 
 // Contact Section
 const Contact = () => {
   return (
-    <div className="tab__contact">
+    <AnimatedSection css="tab__contact">
       <div className="links-wrapper">
         <a href="https://www.linkedin.com/in/thapaakarsan" target="_blank">
           <FaLinkedinIn className="link-icon" />
@@ -31,7 +32,7 @@ const Contact = () => {
           <span className="pb-2">akarsan.thapa@gmail.com</span>
         </a>
       </div>
-    </div>
+    </AnimatedSection>
   );
 };
 

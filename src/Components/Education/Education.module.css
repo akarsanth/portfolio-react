@@ -1,4 +1,49 @@
 .tab__education {
-  padding: 3rem;
+  height: 100%;
+  padding: 6rem 6rem 2rem 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
   overflow: scroll;
+}
+
+.left {
+  flex: 0 0 auto;
+  /* align-self: flex-end; */
+  padding-bottom: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.right {
+  flex: 1 1 auto;
+}
+
+/* Heading dynamic */
+.heading--dy {
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.heading--dy::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.2rem;
+  width: 25%;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -0.8rem;
+  background-color: #d9aa48;
+
+  transition: width 0.4s ease-in-out;
+}
+
+.heading--dy.active::before {
+  width: 100%;
 }

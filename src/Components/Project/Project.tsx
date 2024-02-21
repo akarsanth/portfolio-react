@@ -1,7 +1,8 @@
+import AnimatedSection from "../AnimatedSection";
 import "./Project.css";
 
 const Project = () => {
-  return <div>Project</div>;
+  return <AnimatedSection css="tab__project">Project</AnimatedSection>;
 };
 
 export default Project;

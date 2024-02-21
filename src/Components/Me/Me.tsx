@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import styles from "./Me.module.css";
+import AnimatedSection from "../AnimatedSection";
+
 import { FaArrowRight } from "react-icons/fa6";
 import Photo from "./../../assets/photo.png";
 import { PiHandWavingLight } from "react-icons/pi";
 
 const Me = () => {
   return (
-    <div className={styles["tab__me"]}>
+    <AnimatedSection css={styles["tab__me"]}>
       <img src={Photo} alt="Aakarshan Thapa" className={styles["me__image"]} />
       <div className={styles["me__content"]}>
         <p>
@@ -31,7 +33,7 @@ const Me = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </AnimatedSection>
   );
 };
 

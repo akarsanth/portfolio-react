@@ -11,21 +11,13 @@
   width: 65%;
 }
 
-.about-heading {
-  font-family: "Epilogue", sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-}
-
 .about-text {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   width: 90%;
   font-weight: 200;
   letter-spacing: 0.75px;
   line-height: 2;
   margin-top: 1rem;
-  margin-bottom: 2rem;
 }
 
 .about-image {
@@ -40,16 +32,15 @@
   object-position: 10% 30%;
 }
 
-.separator {
-  margin-top: 1rem;
-  border: 0;
-  height: 0.2rem;
-  background: #d9aa48;
+/* About Links */
+.about-links {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
 }
 
-/* Resume Link */
-.tab__about a:link,
-.tab__about a:visited {
+.about-links a:link,
+.about-links a:visited {
   position: relative;
   display: flex;
   align-items: center;
@@ -62,11 +53,11 @@
   width: fit-content;
 }
 
-.tab__about a:hover {
+.about-links a:hover {
   color: #3e31fa;
 }
 
-.tab__about a::before {
+.about-links a::before {
   content: "";
   position: absolute;
   display: block;

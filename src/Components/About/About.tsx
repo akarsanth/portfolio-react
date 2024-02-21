@@ -1,14 +1,16 @@
-import { FaArrowDown } from "react-icons/fa6";
+import { FaArrowDown, FaArrowRight } from "react-icons/fa6";
+import AnimatedSection from "../AnimatedSection";
 import "./About.css";
 import Photo from "../../assets/about.jpg";
 import Resume from "../../assets/About/Aakarshan-Thapa-Resume.pdf";
+import { Link } from "react-router-dom";
 
 // About Section
 const About = () => {
   return (
-    <div className="tab__about">
+    <AnimatedSection css="tab__about">
       <div className="about-left">
-        <h1 className="about-heading">ABOUT</h1>
+        <h1 className="heading">About</h1>
         <hr className="separator" />
 
         <p className="about-text">
@@ -18,13 +20,19 @@ const About = () => {
           Let's chat tech or the beautiful game!
         </p>
 
-        <a href={Resume} target="_blank" rel="noreferrer">
-          <FaArrowDown /> curriculum vitae
-        </a>
+        <div className="about-links">
+          <a href={Resume} target="_blank" rel="noreferrer">
+            <FaArrowDown /> curriculum vitae
+          </a>
+
+          <Link to="/contact" rel="noreferrer">
+            <FaArrowRight /> contact me
+          </Link>
+        </div>
       </div>
 
       <img src={Photo} alt="About photo" className="about-image" />
-    </div>
+    </AnimatedSection>
   );
 };
 

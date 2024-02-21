@@ -169,3 +169,19 @@ footer svg:hover {
     display: none;
   }
 }
+
+/* Heading */
+.heading {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.separator {
+  margin-top: 1rem;
+  border: 0;
+  height: 0.2rem;
+  background: #d9aa48;
+}
