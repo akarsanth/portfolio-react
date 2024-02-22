@@ -39,6 +39,7 @@
 .experience__list-item {
   display: flex;
   gap: 4rem;
+  line-height: 1.2;
 }
 
 .time {
@@ -60,7 +61,7 @@
 
 .course {
   font-size: 1.3rem;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
 }
 
 .description {

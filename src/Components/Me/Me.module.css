@@ -71,6 +71,10 @@
   font-weight: 500;
 }
 
+.me__content p {
+  line-height: 1.6;
+}
+
 .me__content p span {
   font-family: "Epilogue", sans-serif;
   font-weight: 800;
