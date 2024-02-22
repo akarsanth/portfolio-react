@@ -122,7 +122,7 @@
 
   .education__list-item,
   .experience__list-item {
-    gap: 3rem;
+    gap: 2.5rem;
   }
 
   .right {
@@ -134,7 +134,7 @@
 @media (max-width: 37.5rem) {
   .tab__education {
     flex-direction: column;
-    gap: 5rem;
+    gap: 4rem;
   }
 
   .left {
