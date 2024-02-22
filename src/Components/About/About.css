@@ -101,6 +101,10 @@
     font-size: 1.3rem;
     width: 95%;
   }
+
+  .about-links {
+    flex-direction: column;
+  }
 }
 
 /* Width 550px and less */
