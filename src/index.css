@@ -99,12 +99,17 @@ body {
 }
 
 #root {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(8deg, #d1dcff 19.1%, #f1f5ff 94.27%);
+}
+
+html,
+body,
+#root {
+  height: 100%;
 }
 
 footer {
