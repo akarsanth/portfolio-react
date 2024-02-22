@@ -52,9 +52,8 @@ const Education = () => {
             </div>
 
             <div className={styles["education__list-item"]}>
-              {/* <p className={styles.time}>2019 &#8213; 2022</p> */}
+              <p className={styles.time}>2019 &#8213; 2022</p>
 
-              <p className={styles.time}>Jan 2024 &#8213; Present</p>
               <div>
                 <p className={styles.institution}>
                   London Metropolitan University
