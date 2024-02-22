@@ -43,16 +43,18 @@ const Education = () => {
                 </p>
                 <p className={styles.course}>Full Stack Software Development</p>
 
-                {/* <p className={styles.description}>
+                <p className={styles.description}>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Aperiam illum autem aspernatur odio delectus, similique
                   accusantium, natus hic ad a dignissimos, minus ipsum minima!
-                </p> */}
+                </p>
               </div>
             </div>
 
             <div className={styles["education__list-item"]}>
-              <p className={styles.time}>2019 &#8213; 2022</p>
+              {/* <p className={styles.time}>2019 &#8213; 2022</p> */}
+
+              <p className={styles.time}>Jan 2024 &#8213; Present</p>
               <div>
                 <p className={styles.institution}>
                   London Metropolitan University
@@ -60,11 +62,11 @@ const Education = () => {
 
                 <p className={styles.course}>BSc(Hons) Computing</p>
 
-                {/* <p className={styles.description}>
+                <p className={styles.description}>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Aperiam illum autem aspernatur odio delectus, similique
                   accusantium, natus hic ad a dignissimos, minus ipsum minima!
-                </p> */}
+                </p>
               </div>
             </div>
           </div>

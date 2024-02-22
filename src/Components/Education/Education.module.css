@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6rem;
+  gap: 5rem;
 }
 
 .left {
@@ -19,11 +19,12 @@
 }
 
 .right {
-  padding-right: 6rem;
+  flex: 1 1 auto;
+
+  padding-right: 5rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   max-height: 100%;
-  flex: 1 1 auto;
   overflow-y: auto;
 }
 
@@ -100,14 +101,44 @@
 }
 
 /* Media Queries */
+
+/* width 700px and less */
 @media (max-width: 43.75rem) {
   .tab__education {
     gap: 4rem;
   }
 }
 
+/* Width 650px and less */
 @media (max-width: 650px) {
   .tab__education {
     gap: 3rem;
+  }
+
+  .education__list-item,
+  .experience__list-item {
+    gap: 3rem;
+  }
+
+  .right {
+    padding-right: 3rem;
+  }
+}
+
+/* Width 600px and less */
+@media (max-width: 37.5rem) {
+  .tab__education {
+    flex-direction: column;
+  }
+
+  .left {
+    flex-direction: row;
+    flex-basis: 20%;
+    align-items: flex-end;
+  }
+
+  .right {
+    flex: 0 0 auto;
+    flex-basis: 80%;
   }
 }
