@@ -17,14 +17,14 @@
   font-weight: 200;
   letter-spacing: 0.75px;
   line-height: 2;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .about-image {
   position: absolute;
   top: 0;
   right: 0;
-  height: 40rem;
+  height: 35rem;
   width: 25rem;
   opacity: 0.9;
   border-bottom-left-radius: 1rem;
@@ -79,7 +79,7 @@
 /* Width 750px and less */
 @media screen and (max-width: 46.8rem) {
   .about-left {
-    width: 60%;
+    width: 65%;
   }
 
   .about-text {
@@ -88,12 +88,15 @@
   }
 }
 
-/* Width 600px and less */
+/* Width 650px and less */
 @media screen and (max-width: 40.6rem) {
   .about-left {
-    width: 55%;
+    width: 60%;
   }
+}
 
+/* Width 600px and less */
+@media screen and (max-width: 40.6rem) {
   .about-text {
     font-size: 1.3rem;
     width: 95%;
@@ -126,10 +129,10 @@
 
 /* Height 700px and less */
 @media screen and (max-height: 43.7rem) {
-  .about-image {
+  /* .about-image {
     height: 30rem;
     width: 25rem;
-  }
+  } */
 
   .tab__about {
     gap: 1rem;
