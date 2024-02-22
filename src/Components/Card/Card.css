@@ -1,6 +1,8 @@
 .card {
   height: 50rem;
   width: 75rem;
+  max-width: 100vw;
+  max-height: 100vh;
   background-color: #f1f5ff;
 
   box-shadow: 0 1px 1px hsla(244, 67%, 18%, 0.075),
@@ -12,7 +14,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   position: relative;
 }
 
