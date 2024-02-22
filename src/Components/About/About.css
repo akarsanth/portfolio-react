@@ -114,12 +114,24 @@
     justify-content: center;
     gap: 2rem;
   }
+
+  .about-links {
+    flex-direction: row;
+  }
+
   .about-left {
     width: 100%;
   }
   .about-image {
     position: relative;
     order: -1;
+  }
+}
+
+/* Width 350px and less */
+@media screen and (max-width: 21.8rem) {
+  .about-links {
+    flex-direction: column;
   }
 }
 
@@ -133,11 +145,6 @@
 
 /* Height 700px and less */
 @media screen and (max-height: 43.7rem) {
-  /* .about-image {
-    height: 30rem;
-    width: 25rem;
-  } */
-
   .tab__about {
     gap: 1rem;
   }
