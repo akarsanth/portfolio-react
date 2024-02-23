@@ -28,33 +28,28 @@
   overflow-y: auto;
 }
 
-.education__list,
-.experience__list {
+.learning__list {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 
-.education__list-item,
-.experience__list-item {
+.learning__list-item {
   display: flex;
   gap: 4rem;
   line-height: 1.2;
   color: inherit;
 }
 
-.education__list-item:hover .institution,
-.experience__list-item:hover .institution {
+.learning__list-item:hover .institution {
   color: #3e31fa;
 }
 
-.education__list-item span,
-.experience__list-item span {
+.learning__list-item span {
   transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.education__list-item:hover span,
-.experience__list-item:hover span {
+.learning__list-item:hover span {
   transform: translate(0.15rem, -0.15em);
 }
 
@@ -91,8 +86,7 @@
   /* text-align: start; */
 }
 
-.education__list-item div,
-.experience__list-item div {
+.learning__list-item div {
   flex: 0 1 auto;
 }
 
@@ -129,7 +123,7 @@
 
 /* width 700px and less */
 @media (max-width: 43.75rem) {
-  .tab__education {
+  .tab__learning {
     gap: 4rem;
   }
 }
@@ -140,8 +134,8 @@
     gap: 2.5rem;
   }
 
-  .education__list-item,
-  .experience__list-item {
+  .learning__list-item,
+  .learning__list-item {
     gap: 2rem;
   }
 
@@ -176,7 +170,7 @@
 
 /* Width 450px and less */
 @media (max-width: 450px) {
-  .tab__education {
+  .tab__learning {
     align-items: center;
   }
 
@@ -184,8 +178,8 @@
     width: 85%;
   }
 
-  .education__list-item,
-  .experience__list-item {
+  .learning__list-item,
+  .learning__list-item {
     flex-direction: column;
     gap: 1rem;
   }
@@ -209,7 +203,7 @@
     padding-right: 3rem;
   }
 
-  .tab__education {
+  .tab__learning {
     gap: 4rem;
   }
 }
