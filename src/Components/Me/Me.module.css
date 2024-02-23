@@ -111,7 +111,8 @@
   transition: color 1s ease-out;
 }
 
-.me__links a:hover {
+.me__links a:hover,
+.me__links a:active {
   color: #3e31fa;
 }
 
