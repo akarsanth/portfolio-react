@@ -2,7 +2,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 interface Props {
   data: {
-    link: string;
+    url: string;
     start: string;
     end: string;
     institution: string;
@@ -12,10 +12,10 @@ interface Props {
 }
 
 const LearningItem = ({
-  data: { link, start, end, institution, title, description },
+  data: { url, start, end, institution, title, description },
 }: Props) => {
   return (
-    <a className="learning__list-item" href={link} target="_blank">
+    <a className="learning__list-item" href={url} target="_blank">
       <p className="time">
         {start} &#8213; {end}
       </p>

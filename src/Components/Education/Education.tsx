@@ -2,7 +2,7 @@ import { useState } from "react";
 import AnimatedSection from "../AnimatedSection";
 import "./Education.css";
 import LearningItem from "./LearningItem";
-import learnings from "../../data/learning";
+import learnings from "../../data/learnings";
 
 type ActiveState = "education" | "experience";
 
@@ -37,7 +37,7 @@ const Education = () => {
         {active === "education" && (
           <AnimatedSection css="learning__list" side="top">
             {learnings.education.map((data) => (
-              <LearningItem data={data} />
+              <LearningItem key={data.title} data={data} /> // change key
             ))}
           </AnimatedSection>
         )}
@@ -46,7 +46,7 @@ const Education = () => {
         {active === "experience" && (
           <AnimatedSection css="learning__list" side="top">
             {learnings.experience.map((data) => (
-              <LearningItem data={data} />
+              <LearningItem key={data.title} data={data} />
             ))}
           </AnimatedSection>
         )}

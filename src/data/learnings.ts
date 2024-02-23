@@ -1,7 +1,7 @@
 export default {
   education: [
     {
-      link: "https://www.lambtoncollege.ca/programs/international/fsds",
+      url: "https://www.lambtoncollege.ca/programs/international/fsds",
       start: "Jan 2024",
       end: "Present",
       institution: "Lambton College Mississauga",
@@ -10,7 +10,7 @@ export default {
         "Actively pursuing Full Stack Software Development with a focus on front-end (HTML5, CSS3, React) and backend (Node.js, SQL, MongoDB) technologies. Excited to apply this expertise increating user-centric web applications.",
     },
     {
-      link: "https://www.londonmet.ac.uk/courses/undergraduate/computing---bsc-hons/",
+      url: "https://www.londonmet.ac.uk/courses/undergraduate/computing---bsc-hons/",
       start: "2019",
       end: "2022",
       institution: "London Metropolitan University",
@@ -22,7 +22,7 @@ export default {
 
   experience: [
     {
-      link: "https://www.ekbana.com/",
+      url: "https://www.ekbana.com/",
       start: "Aug 2022",
       end: "Nov 2022",
       institution: "E.K. Solutions Pvt. Ltd.",
