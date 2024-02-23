@@ -43,7 +43,7 @@ Run the development server:
 npm run dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000) to view the portfolio.
+Visit [http://localhost:5173](http://localhost:5173) to view the portfolio.
 
 ## Scripts
 
