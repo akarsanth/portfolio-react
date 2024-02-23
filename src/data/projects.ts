@@ -18,7 +18,7 @@ export default [
   },
   {
     id: 2,
-    title: "Portfolio",
+    title: "Portfolio Website",
     description: "Personal portfolio, the one you're at right now.",
     github: "https://github.com/akarsanth/portfolio-react",
     url: "https://thapa-dev.vercel.app/",

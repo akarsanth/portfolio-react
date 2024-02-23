@@ -1,6 +1,5 @@
 .content {
   flex-basis: 40rem;
-
   padding: 2rem 3rem 2rem 4rem;
 }
 
@@ -49,4 +48,10 @@
   font-size: 1.4rem;
   font-weight: 200;
   line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 95%;
+  }
 }
