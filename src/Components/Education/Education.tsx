@@ -44,9 +44,10 @@ const Education = () => {
                 <p className={styles.course}>Full Stack Software Development</p>
 
                 <p className={styles.description}>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aperiam illum autem aspernatur odio delectus, similique
-                  accusantium, natus hic ad a dignissimos, minus ipsum minima!
+                  Actively pursuing Full Stack Software Development with a focus
+                  on front-end (HTML5, CSS3, React) and backend (Node.js, SQL,
+                  MongoDB) technologies. Excited to apply this expertise in
+                  creating user-centric web applications.
                 </p>
               </div>
             </div>
@@ -62,9 +63,10 @@ const Education = () => {
                 <p className={styles.course}>BSc(Hons) Computing</p>
 
                 <p className={styles.description}>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aperiam illum autem aspernatur odio delectus, similique
-                  accusantium, natus hic ad a dignissimos, minus ipsum minima!
+                  Acquired essential skills in commercial applications and
+                  sought-after programming abilities. Explored specialized
+                  topics aligned with industry demands, enhancing my readiness
+                  for diverse roles in the field.
                 </p>
               </div>
             </div>
