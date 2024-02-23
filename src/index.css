@@ -113,6 +113,7 @@ body,
 }
 
 a {
+  color: #0f2145;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }

@@ -3,8 +3,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa6";
-import "./Contact.css";
 import AnimatedSection from "../AnimatedSection";
+import "./Contact.css";
 
 // Contact Section
 const Contact = () => {

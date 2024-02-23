@@ -1,0 +1,52 @@
+.content {
+  flex-basis: 40rem;
+
+  padding: 2rem 3rem 2rem 4rem;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title .links {
+  display: flex;
+  font-size: 2rem;
+  gap: 0.5rem;
+}
+
+.links a {
+  padding: 0.7rem;
+  border-radius: 50%;
+
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  background-color: #eceaff;
+  color: #3e31fa;
+}
+
+.techs {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.6rem;
+}
+
+.tech {
+  border: 0.5px solid gray;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  border-radius: 1.2rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 1.5;
+}

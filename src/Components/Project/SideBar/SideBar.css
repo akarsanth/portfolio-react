@@ -1,0 +1,34 @@
+.sidebar {
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.4rem;
+
+  width: fit-content;
+}
+
+.sidebar p {
+  padding: 1.5rem 1rem 1.5rem 0.8rem;
+  font-weight: 500;
+  color: #5e6a83;
+  border-left: 0.3rem solid transparent;
+
+  letter-spacing: 0.75px;
+  cursor: pointer;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.sidebar p.active {
+  border-left-color: #3e31fa;
+  background-color: #eeecff;
+}
+.sidebar p:hover {
+  background-color: #eeecff;
+}
+
+.sidebar p:active {
+  background-color: #d8d6fe;
+  color: #29395a;
+}
