@@ -1,6 +1,7 @@
 import "./SideBar.css";
 // import projects from "../../../data/projects";
 import Project from "../../../entities/Project";
+import AnimatedSection from "../../AnimatedSection";
 
 interface Props {
   onSelectProject: (_id: string) => void;
@@ -10,7 +11,7 @@ interface Props {
 
 const SideBar = ({ onSelectProject, selectedProject, projects }: Props) => {
   return (
-    <aside className="sidebar">
+    <AnimatedSection css="sidebar" side="top">
       {projects?.map((project) => (
         <p
           key={Math.random()}
@@ -20,7 +21,7 @@ const SideBar = ({ onSelectProject, selectedProject, projects }: Props) => {
           {project.title}
         </p>
       ))}
-    </aside>
+    </AnimatedSection>
   );
 };
 

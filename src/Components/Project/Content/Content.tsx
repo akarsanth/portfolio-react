@@ -1,4 +1,5 @@
 import Project from "../../../entities/Project";
+import AnimatedSection from "../../AnimatedSection";
 import styles from "./Content.module.css";
 import { FaGithub } from "react-icons/fa6";
 import { MdArrowOutward } from "react-icons/md";
@@ -11,7 +12,7 @@ const Content = ({ project }: Props) => {
   const { title, description, github, url, techs } = project;
 
   return (
-    <div className={styles.content}>
+    <AnimatedSection css={styles.content} side="top">
       <p className={styles.title}>
         {title}
         <div className={styles.links}>
@@ -37,7 +38,7 @@ const Content = ({ project }: Props) => {
       </div>
 
       <p className={styles.description}>{description}</p>
-    </div>
+    </AnimatedSection>
   );
 };
 
