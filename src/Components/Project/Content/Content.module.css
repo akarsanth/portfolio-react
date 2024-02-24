@@ -47,62 +47,6 @@
   border-radius: 1.6rem;
 }
 
-/* Techs color */
-.react {
-  background-color: #61dcfbbe;
-}
-.express {
-  background-color: #8787876d;
-}
-
-.materialui {
-  background-color: #387fc566;
-}
-
-.node {
-  background-color: #a0c75cb9;
-}
-
-.axios {
-  background-color: #804b9445;
-}
-
-.formik {
-  background-color: #2152c535;
-}
-
-.yup {
-  background-color: #6e6e6e2d;
-}
-
-.jwt {
-  background-color: #e9335a6a;
-}
-
-.mysql {
-  background-color: #2d5f835b;
-}
-
-.sequelize {
-  background-color: #65b1eb7b;
-}
-
-.bcrypt {
-  background-color: #395d6242;
-}
-
-.framer {
-  background-color: #cdc0f5;
-}
-
-.typescript {
-  background-color: #4476c065;
-}
-
-.sass {
-  background-color: #ba69919b;
-}
-
 .description {
   font-size: 1.3rem;
   font-weight: 200;

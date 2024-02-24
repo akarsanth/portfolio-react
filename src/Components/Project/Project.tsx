@@ -1,33 +1,63 @@
+import { useEffect, useState } from "react";
 import AnimatedSection from "../AnimatedSection";
 import "./Project.css";
-import { useEffect, useState } from "react";
 import Content from "./Content/Content";
 import SideBar from "./SideBar/SideBar";
 import ProjectEntity from "../../entities/Project";
-import projects from "../../data/projects";
+// import projects from "../../data/projects";
+import { client } from "../../config/sanity";
 
 const Project = () => {
-  const [selectedProject, setSelectedProject] = useState<number | null>(null);
-
-  const [project, setProject] = useState<ProjectEntity | undefined>(undefined);
+  const [isLoading, setLoading] = useState<boolean>(false);
+  const [projects, setProjects] = useState<ProjectEntity[] | undefined>();
+  const [selectedProject, setSelectedProject] = useState<string | undefined>();
 
   // selecting first project from the list
   useEffect(() => {
-    setSelectedProject(projects[0]?.id);
+    const query = `*[_type == 'project'] {
+      _id,
+      title,
+      description,
+      github,
+      url,
+      "techs": techs[]->
+        { _id, name, short, color }
+    }`;
+
+    setLoading(true);
+    const fetchProjects = async () => {
+      const projects = await client.fetch(query);
+      console.log(projects);
+
+      setProjects(projects);
+      setLoading(false);
+    };
+
+    fetchProjects();
   }, []);
 
-  // finding the selected list
+  // Selecting the project for first time
   useEffect(() => {
-    setProject(projects.find((project) => project.id === selectedProject));
-  }, [selectedProject]);
+    if (projects && projects.length > 0) {
+      setSelectedProject(projects[0]?._id);
+    }
+  }, [projects]);
+
+  const project = projects?.find((project) => project._id === selectedProject);
 
   return (
     <AnimatedSection css="tab__project" side="left">
-      <SideBar
-        selectedProject={selectedProject}
-        onSelectProject={(id) => setSelectedProject(id)}
-      />
-      {project && <Content project={project} />}
+      {isLoading && <p>hello</p>}
+      {!isLoading && (
+        <>
+          <SideBar
+            selectedProject={selectedProject}
+            onSelectProject={(_id) => setSelectedProject(_id)}
+            projects={projects}
+          />
+          {project && <Content project={project} />}
+        </>
+      )}
     </AnimatedSection>
   );
 };

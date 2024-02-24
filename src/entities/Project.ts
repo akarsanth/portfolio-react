@@ -1,7 +1,7 @@
 import Tech from "./Tech";
 
 export default interface Project {
-  id: number;
+  _id: string;
   title: string;
   description: string;
   github: string;

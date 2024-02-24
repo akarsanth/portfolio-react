@@ -25,8 +25,14 @@ const Content = ({ project }: Props) => {
       </p>
 
       <div className={styles.techs}>
-        {techs.map((tech) => (
-          <p className={`${styles.tech} ${styles[tech.short]}`}>{tech.name}</p>
+        {techs?.map((tech) => (
+          <p
+            key={tech._id}
+            className={styles.tech}
+            style={{ backgroundColor: tech.color }}
+          >
+            {tech.name}
+          </p>
         ))}
       </div>
 
