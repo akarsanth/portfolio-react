@@ -57,7 +57,7 @@
 }
 
 .me__image {
-  max-width: 22rem;
+  max-width: 24rem;
 }
 
 .me__content {
@@ -155,9 +155,25 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 600px) {
+  .me__image {
+    width: 22rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .me__image {
+    width: 20rem;
+  }
+
   .me__links {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 300px) {
+  .me__image {
+    width: 18rem;
   }
 }
