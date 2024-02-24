@@ -150,6 +150,11 @@ footer svg:hover {
   color: #5e6a83;
 }
 
+/* P tag */
+p {
+  letter-spacing: 0.75px;
+}
+
 /* 750px */
 @media only screen and (max-width: 46.8rem) {
   footer {

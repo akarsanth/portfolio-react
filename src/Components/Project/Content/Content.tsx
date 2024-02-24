@@ -26,7 +26,7 @@ const Content = ({ project }: Props) => {
 
       <div className={styles.techs}>
         {techs.map((tech) => (
-          <p className={styles.tech}>{tech.short}</p>
+          <p className={`${styles.tech} ${styles[tech.short]}`}>{tech.name}</p>
         ))}
       </div>
 
