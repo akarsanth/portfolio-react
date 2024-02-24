@@ -3,7 +3,7 @@ import OmnifurniReport from "../assets/Projects/AakarshanThapa_FYP_Final_Report.
 export default [
   {
     id: 1,
-    title: "Omnifurni Web Application",
+    title: "Omnifurni Web App",
     description:
       "Omnifurni is a B2C (Business-to-Consumer) E-Commerce platform designed as a final year project for Bachelor's degree. The project focuses on creating a seamless online shopping experience for users interested in purchasing furniture. It provides a single-vendor platform, making it a one-stop solution for users seeking quality furniture items. The project has not been hosted, as the application is heavy.",
     github: "https://github.com/akarsanth/omnifurni",

@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  /* margin-bottom: 1rem; */
+  margin-bottom: 1rem;
 }
 
 .title .links {
