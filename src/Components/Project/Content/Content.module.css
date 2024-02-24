@@ -16,11 +16,14 @@
 
 .title .links {
   display: flex;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .links a {
-  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  padding: 1rem;
   border-radius: 50%;
 
   transition: all 0.3s ease;

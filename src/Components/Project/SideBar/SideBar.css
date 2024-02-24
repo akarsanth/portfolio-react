@@ -9,7 +9,7 @@
 }
 
 .sidebar p {
-  padding: 1.5rem 1rem 1.5rem 0.8rem;
+  padding: 1.5rem 1.8rem 1.5rem 0.8rem;
   font-weight: 500;
   color: #5e6a83;
   border-left: 0.3rem solid transparent;
@@ -29,6 +29,12 @@
 }
 
 .sidebar p:active {
-  background-color: #d8d6fe;
+  background-color: #c5c1fe;
   color: #29395a;
+}
+
+@media (max-width: 600px) {
+  .sidebar p {
+    padding: 1.5rem 3.5rem 1.5rem 1rem;
+  }
 }
