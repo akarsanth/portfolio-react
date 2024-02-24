@@ -6,6 +6,7 @@ import SideBar from "./SideBar/SideBar";
 import ProjectEntity from "../../entities/Project";
 // import projects from "../../data/projects";
 import { client } from "../../config/sanity";
+import Loader from "./Loader/Loader";
 
 const Project = () => {
   const [isLoading, setLoading] = useState<boolean>(false);
@@ -27,7 +28,6 @@ const Project = () => {
     setLoading(true);
     const fetchProjects = async () => {
       const projects = await client.fetch(query);
-      console.log(projects);
 
       setProjects(projects);
       setLoading(false);
@@ -47,7 +47,7 @@ const Project = () => {
 
   return (
     <AnimatedSection css="tab__project" side="left">
-      {isLoading && <p>hello</p>}
+      {isLoading && <Loader />}
       {!isLoading && (
         <>
           <SideBar

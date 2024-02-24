@@ -10,6 +10,4 @@ const config = {
   ignoreBrowserTokenWarning: true,
 };
 
-console.log(config);
-
 export const client = createClient(config);

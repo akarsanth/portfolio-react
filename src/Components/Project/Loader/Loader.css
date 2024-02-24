@@ -1,0 +1,26 @@
+.loader {
+  position: relative;
+  background: conic-gradient(transparent, #3e31fa);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: load 2s linear infinite;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  background-color: #f1f5ff;
+}
+
+@keyframes load {
+  100% {
+    transform: rotate(360deg);
+  }
+}
