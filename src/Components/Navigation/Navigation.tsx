@@ -11,31 +11,29 @@ import "./Navigation.scss";
 
 const Navigation = () => {
   return (
-    <nav className="nav">
-      <NavLink to="/">
-        <BsEmojiSmile />
+    <nav className="nav" role="navigation" aria-label="Main">
+      <NavLink to="/" aria-label="Navigate to Me">
+        <BsEmojiSmile aria-hidden="true" />
         <span>Me</span>
       </NavLink>
 
-      <NavLink to="/projects">
-        <FaCode />
+      <NavLink to="/projects" aria-label="Navigate to Projects">
+        <FaCode aria-hidden="true" />
         <span>Projects</span>
       </NavLink>
 
-      <NavLink to="/about">
-        <MdOutlinePerson />
-        {/* <GiSkills /> */}
-        {/* <FaConnectdevelop /> */}
-        {/* <SiAboutdotme /> */}
+      <NavLink to="/about" aria-label="Navigate to About">
+        <MdOutlinePerson aria-hidden="true" />
         <span>About</span>
       </NavLink>
 
-      <NavLink to="/education">
-        <PiGraduationCap />
+      <NavLink to="/education" aria-label="Navigate to Education">
+        <PiGraduationCap aria-hidden="true" />
         <span>Education</span>
       </NavLink>
-      <NavLink to="/contact">
-        <MdOutlineMessage />
+
+      <NavLink to="/contact" aria-label="Navigate to Contact">
+        <MdOutlineMessage aria-hidden="true" />
         <span>Contact</span>
       </NavLink>
     </nav>
