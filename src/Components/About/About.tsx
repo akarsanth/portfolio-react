@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <AnimatedSection css="tab__about">
-      <div className="about-left">
+      <div className="about-content">
         <h1 className="heading">About</h1>
         <hr className="separator" />
 
@@ -21,12 +21,17 @@ const About = () => {
         </p>
 
         <div className="about-links">
-          <a href={Resume} target="_blank" rel="noreferrer">
-            <FaArrowDown /> curriculum vitae
+          <a
+            href={Resume}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="View Curriculum Vitae"
+          >
+            <FaArrowDown aria-hidden="true" /> curriculum vitae
           </a>
 
-          <Link to="/contact" rel="noreferrer">
-            <FaArrowRight /> contact me
+          <Link to="/contact" rel="noreferrer" aria-label="Navigate to Contact">
+            <FaArrowRight aria-hidden="true" /> contact me
           </Link>
         </div>
       </div>

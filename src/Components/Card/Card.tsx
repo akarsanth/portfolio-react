@@ -4,12 +4,12 @@ import Navigation from "../Navigation/Navigation";
 
 const Card = () => {
   return (
-    <div className="card">
+    <main className="card">
       <div className="card__content">
         <Outlet />
       </div>
       <Navigation />
-    </div>
+    </main>
   );
 };
 
