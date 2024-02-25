@@ -1,17 +1,18 @@
 .content {
   flex-basis: 40rem;
-  padding: 2rem 3rem 2rem 4rem;
+  padding: 2.4rem 3.2rem 2.4rem 4.8rem;
+  overflow: scroll;
 }
 
 .title {
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.05;
   font-weight: 800;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 1rem;
+  gap: 2.4rem;
+  margin-bottom: 1.2rem;
 }
 
 .title .links {
@@ -23,7 +24,7 @@
   display: flex;
   align-items: center;
   font-size: 2rem;
-  padding: 1rem;
+  padding: 1.2rem;
   border-radius: 50%;
 
   transition: all 0.3s ease;
@@ -36,16 +37,16 @@
 
 .techs {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
   flex-wrap: wrap;
   margin-bottom: 1.6rem;
 }
 
 .tech {
   /* display: inline-block; */
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1.2rem;
   font-size: 1.2rem;
-  border-radius: 1.6rem;
+  border-radius: 1.1rem;
 }
 
 .tech:hover {
@@ -53,13 +54,17 @@
 }
 
 .description {
-  font-size: 1.3rem;
-  font-weight: 200;
+  font-size: 1.4rem;
+  font-weight: 400;
   line-height: 1.7;
 }
 
 @media (max-width: 600px) {
   .content {
     width: 95%;
+  }
+
+  .content {
+    flex-basis: 100%;
   }
 }
