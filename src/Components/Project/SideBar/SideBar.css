@@ -5,13 +5,13 @@
   justify-content: center;
   font-size: 1.4rem;
 
-  margin: 2.4rem 0 1.6rem;
+  margin: 1.6rem 0;
 
   width: fit-content;
 }
 
 .sidebar p {
-  padding: 1.4rem 1.6rem 1.4rem 0.8rem;
+  padding: 1.2rem 1.2rem 1.2rem 0.8rem;
   font-weight: 500;
   color: #5e6a83;
   border-left: 0.3rem solid transparent;
@@ -41,6 +41,6 @@
   }
 
   .sidebar p {
-    padding: 1.6rem 3.2rem 1.6em 1.2rem;
+    padding: 1.2rem 1.2rem 1.2rem 0.8rem;
   }
 }
