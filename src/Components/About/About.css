@@ -78,7 +78,7 @@
 
 /* Width 750px and less */
 @media screen and (max-width: 46.8rem) {
-  .about-left {
+  .about-content {
     width: 65%;
   }
 
@@ -90,7 +90,7 @@
 
 /* Width 650px and less */
 @media screen and (max-width: 40.6rem) {
-  .about-left {
+  .about-content {
     width: 60%;
   }
 }
@@ -119,7 +119,7 @@
     flex-direction: row;
   }
 
-  .about-left {
+  .about-content {
     width: 100%;
   }
   .about-image {
