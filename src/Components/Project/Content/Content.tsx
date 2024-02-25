@@ -27,13 +27,15 @@ const Content = ({ project }: Props) => {
 
       <div className={styles.techs}>
         {techs?.map((tech) => (
-          <p
+          <a
+            href={tech.url}
             key={tech._id}
-            className={styles.tech}
             style={{ backgroundColor: tech.color }}
+            className={styles.tech}
+            target="_blank"
           >
             {tech.name}
-          </p>
+          </a>
         ))}
       </div>
 

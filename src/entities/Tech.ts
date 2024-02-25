@@ -3,4 +3,5 @@ export default interface Tech {
   name: string;
   short: string;
   color: string;
+  url: string;
 }

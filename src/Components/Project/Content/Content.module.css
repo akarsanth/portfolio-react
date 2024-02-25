@@ -42,9 +42,14 @@
 }
 
 .tech {
+  /* display: inline-block; */
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   border-radius: 1.6rem;
+}
+
+.tech:hover {
+  filter: brightness(90%);
 }
 
 .description {

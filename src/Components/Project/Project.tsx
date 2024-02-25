@@ -22,7 +22,7 @@ const Project = () => {
       github,
       url,
       "techs": techs[]->
-        { _id, name, short, color }
+        { _id, name, short, color, url }
     }`;
 
     setLoading(true);
