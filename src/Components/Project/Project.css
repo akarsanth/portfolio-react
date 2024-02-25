@@ -11,6 +11,5 @@
 @media (max-width: 600px) {
   .tab__project {
     flex-direction: column;
-    gap: 2.4rem;
   }
 }
