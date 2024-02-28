@@ -142,6 +142,7 @@
   }
 
   .left {
+    padding-top: 1.2rem;
     flex-direction: row;
     gap: 3.2rem;
     /* flex-basis: 10%; */
